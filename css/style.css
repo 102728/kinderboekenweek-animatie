@@ -1,5 +1,38 @@
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+html{
+    margin: 0px;
+    height: 100%;
+}
+
 #bodydiv {
     width: 100%;
     height: 100%;
-    background-color: lightgreen;
+    background-color: skyblue;
+
+}
+
+#grass {
+    position: absolute;
+    margin-top: 100px;
+}
+#eekhoorn{
+    position: absolute;
+    width: 200px;
+    bottom: 200px;
+    left: 400px;
+}
+#legeraket{
+    position: absolute;
+    width: 750px;
+    bottom: 0px;
+    right: 200px;
+}
+#zon{
+    position: absolute;
+    width: 200px;
+    right: 0px;
 }
