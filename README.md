@@ -1,2 +1,6 @@
+
 # kinderboekenweek-animatie
-L + Ratio + ThisAssignmentIsn'tFun
+
+## Todo
+
+- [ ] Banger animatie maken!
