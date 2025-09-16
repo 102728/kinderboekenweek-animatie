@@ -1,38 +1,63 @@
-body{
+body {
     margin: 0px;
     height: 100%;
 }
 
-html{
+html {
     margin: 0px;
     height: 100%;
 }
 
 #bodydiv {
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 1080px;
     background-color: skyblue;
 
 }
 
+/* achtergronden */
 #grass {
     position: absolute;
-    margin-top: 100px;
+    top: 140px;
+    width: 1920px;
 }
-#eekhoorn{
+
+
+/* main character */
+#eekhoorn {
     position: absolute;
     width: 200px;
-    bottom: 200px;
+    top: 750px;
     left: 400px;
 }
-#legeraket{
+
+#legeraket {
     position: absolute;
     width: 750px;
-    bottom: 0px;
-    right: 200px;
+    top: 400px;
+    left: 900px;
 }
-#zon{
+
+#raketmetvuur {
+    visibility: hidden;
+    position: absolute;
+    width: 750px;
+    top: 400px;
+    left: 900px;
+}
+
+#raketzondervuur {
+    visibility: hidden;
+    position: absolute;
+    width: 750px;
+    top: 400px;
+    left: 900px;
+}
+
+
+/* achtergrondobjecten */
+#zon {
     position: absolute;
     width: 200px;
-    right: 0px;
+    left: 0px;
 }
