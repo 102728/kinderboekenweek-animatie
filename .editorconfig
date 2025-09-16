@@ -2,6 +2,6 @@
 root = true
 
 [*]
-tab_width = 2
+tab_width = 4
 indent_style = space
 trim_trailing_whitespace = true
