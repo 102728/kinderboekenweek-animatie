@@ -67,7 +67,6 @@ function startLoop() {
 function fragment1() {
   EEKHOORN.style.transition = "transform 4s linear";
   EEKHOORN.style.transform = "translateX(800px)";
-
 }
 
 function fragment2() {
@@ -78,10 +77,10 @@ function fragment2() {
   }, 500);
   setTimeout(() => {
     RAKETZONDERVUUR.style.visibility = "hidden";
-  }, 500);
+  }, 1000);
   setTimeout(() => {
     RAKETMETVUUR.style.visibility = "visible";
-  }, 500)
+  }, 1500)
 }
 
 function fragment3() {
@@ -129,6 +128,7 @@ function resestAnimation() {
   SATELLITE2.style.visibility = "hidden";
   MOON.style.visibility = "hidden";
   METEOR.style.visibility = "hidden";
+  EEKHOORN.style.transform = "translateX(0px)";
 }
 
 window.addEventListener("DOMContentLoaded", () => {
