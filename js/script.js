@@ -80,7 +80,7 @@ function fragment2() {
   }, 3500);
   setTimeout(() => {
     RAKETMETVUUR.style.visibility = "visible";
-  }, 4000)
+  }, 4000);
 }
 
 function fragment3() {
@@ -90,26 +90,43 @@ function fragment3() {
   ZON.style.transform = "translateY(1080px)";
   setTimeout(() => {
     CLOUD1.style.visibility = "visible";
+    CLOUD1.style.transition = "transform 10s linear";
+    CLOUD1.style.transform = "translateY(1580px)";
     CLOUD2.style.visibility = "visible";
+    CLOUD2.style.transition = "transform 8s linear";
+    CLOUD2.style.transform = "translateY(1580px)";
     CLOUD3.style.visibility = "visible";
-  }, 2000)
+    CLOUD3.style.transition = "transform 12s linear";
+    CLOUD3.style.transform = "translateY(1580px)";
+  }, 2000);
 }
 
 function fragment4() {
-PLANE.style.visibility = "visible";
-PLANE.style.transition = "transform 6s linear";
-PLANE.style.transform = "translateX(2320px), translateY(400px)";
-PLANE.style.transition = "transform 4s linear";
-// PLANE.style.tranform = "";
-
+  PLANE.style.visibility = "visible";
+  PLANE.style.transition = "transform 6s linear";
+  PLANE.style.transform = "translateX(2320px) translateY(400px)";
 }
 
 function fragment5() {
-
+SATELLITE1.style.visibility = "visible";
+SATELLITE1.style.transition = "transform 8s linear";
+SATELLITE1.style.transform = "translateY(1480px)";
+setTimeout(() => {
+SATELLITE2.style.visibility = "visible";
+SATELLITE2.style.transition = "transform 8s linear";
+SATELLITE2.style.transform = "translateY(1580px)";
+}, 1500);
 }
 
 function fragment6() {
-  document.getElementById("space").style.visibility = "visible";
+  METEOR.style.visibility = "visible";
+  METEOR.style.transition = "transform 4s linear";
+  METEOR.style.transform = "translateY(1580px) translateX(1000px)";
+  setTimeout(() => {
+  SPACE.style.visibility = "visible";
+  SPACE.style.transition = "transform 6s linear";
+  SPACE.style.transform = "translateY(1080px)";
+  }, 2000);
 }
 
 function fragment7() {

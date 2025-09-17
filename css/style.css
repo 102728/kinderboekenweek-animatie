@@ -13,6 +13,7 @@ html {
 }
 
 #bodydiv {
+    position: relative;
     width: 1920px;
     height: 1080px;
     background-color: skyblue;
@@ -31,6 +32,7 @@ html {
     position: absolute;
     width: 1920px;
     height: 1080px;
+    top: -1080px;
 }
 
 #noorderlicht {
@@ -88,7 +90,7 @@ html {
     visibility: hidden;
     position: absolute;
     width: 500px;
-    top: 300px;
+    top: -200px;
     left: 100px;
 }
 
@@ -96,7 +98,7 @@ html {
     visibility: hidden;
     position: absolute;
     width: 500px;
-    top: 100px;
+    top: -400px;
     left: 750px;
 }
 
@@ -104,7 +106,7 @@ html {
     visibility: hidden;
     position: absolute;
     width: 500px;
-    top: 250px;
+    top: -250px;
     left: 1250px;
 }
 
@@ -120,7 +122,7 @@ html {
     position: absolute;
     width: 400px;
     left: 100px;
-    top: 150px;
+    top: -250px;
 }
 
 #satellite2 {
@@ -128,7 +130,7 @@ html {
     position: absolute;
     width: 500px;
     left: 1400px;
-    top: 200px;
+    top: -300px;
 }
 
 #moon {
@@ -141,7 +143,7 @@ html {
     visibility: hidden;
     position: absolute;
     width: 700px;
-    top: 50px;
+    top: -450px;
     left: 200px;
 }
 
