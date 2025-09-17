@@ -50,14 +50,14 @@ html {
 #eekhoorn {
     position: absolute;
     width: 200px;
-    top: 750px;
+    top: 730px;
     left: 400px;
 }
 
 #legeraket {
     position: absolute;
     width: 750px;
-    top: 400px;
+    top: 380px;
     left: 900px;
 }
 
@@ -65,7 +65,7 @@ html {
     visibility: hidden;
     position: absolute;
     width: 750px;
-    top: 400px;
+    top: 380px;
     left: 900px;
 }
 
@@ -73,7 +73,7 @@ html {
     visibility: hidden;
     position: absolute;
     width: 750px;
-    top: 400px;
+    top: 380px;
     left: 900px;
 }
 
