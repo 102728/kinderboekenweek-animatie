@@ -25,16 +25,21 @@ html {
 #space {
     visibility: hidden;
     position: absolute;
+    width: 1920px;
+    height: 1080px;
 }
 
 #noorderlicht {
     visibility: hidden;
     position: absolute;
+    width: 1000px;
 }
 
 #moonsurface {
     visibility: hidden;
     position: absolute;
+    width: 1920px;
+    top: 600px;
 }
 
 /* main character */
@@ -73,36 +78,72 @@ html {
 #zon {
     position: absolute;
     width: 200px;
-    left: 0px;
 }
 
-#cloud{
+#cloud1 {
     visibility: hidden;
     position: absolute;
+    width: 500px;
+    top: 300px;
+    left: 100px;
+}
+
+#cloud2 {
+    visibility: hidden;
+    position: absolute;
+    width: 500px;
+    top: 100px;
+    left: 750px;
+}
+
+#cloud3 {
+    visibility: hidden;
+    position: absolute;
+    width: 500px;
+    top: 250px;
+    left: 1250px;
 }
 
 #plane {
     visibility: hidden;
     position: absolute;
-
+    width: 400px;
 }
 
 #satellite1 {
     visibility: hidden;
     position: absolute;
+    width: 400px;
+    left: 100px;
+    top: 150px;
 }
 
 #satellite2 {
     visibility: hidden;
     position: absolute;
+    width: 500px;
+    left: 1400px;
+    top: 200px;
 }
 
 #moon {
     visibility: hidden;
     position: absolute;
+    width: 200px;
 }
 
 #meteor {
     visibility: hidden;
     position: absolute;
+    width: 700px;
+    top: 50px;
+    left: 200px;
+}
+
+#acorn {
+    visibility: hidden;
+    position: absolute;
+    width: 100px;
+    top: 875px;
+    left: 550px;
 }
