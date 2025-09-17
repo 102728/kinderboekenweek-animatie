@@ -77,17 +77,30 @@ function fragment2() {
   }, 500);
   setTimeout(() => {
     RAKETZONDERVUUR.style.visibility = "hidden";
-  }, 1000);
+  }, 3500);
   setTimeout(() => {
     RAKETMETVUUR.style.visibility = "visible";
-  }, 1500)
+  }, 4000)
 }
 
 function fragment3() {
-  document.getElementById("grass").style.visibility = "hidden";
+  GRASS.style.transition = "transform 4s linear";
+  GRASS.style.transform = "translateY(600px)";
+  ZON.style.transition = "transform 12s linear";
+  ZON.style.transform = "translateY(1080px)";
+  setTimeout(() => {
+    CLOUD1.style.visibility = "visible";
+    CLOUD2.style.visibility = "visible";
+    CLOUD3.style.visibility = "visible";
+  }, 2000)
 }
 
 function fragment4() {
+PLANE.style.visibility = "visible";
+PLANE.style.transition = "transform 6s linear";
+PLANE.style.transform = "translateX(2320px), translateY(400px)";
+PLANE.style.transition = "transform 4s linear";
+// PLANE.style.tranform = "";
 
 }
 
