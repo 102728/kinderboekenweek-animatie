@@ -73,22 +73,27 @@ function fragment1() {
 function fragment2() {
   EEKHOORN.style.visibility = "hidden";
   LEGERAKET.style.visibility = "hidden";
-  RAKETZONDERVUUR.style.visibility = "visible";
+  setTimeout(() => {
+    RAKETZONDERVUUR.style.visibility = "visible";
+  }, 500);
   setTimeout(() => {
     RAKETZONDERVUUR.style.visibility = "hidden";
+  }, 500);
+  setTimeout(() => {
     RAKETMETVUUR.style.visibility = "visible";
-  }, 1000);
+  }, 500)
 }
 
 function fragment3() {
   document.getElementById("grass").style.visibility = "hidden";
-
 }
 
 function fragment4() {
+
 }
 
 function fragment5() {
+
 }
 
 function fragment6() {
@@ -96,12 +101,15 @@ function fragment6() {
 }
 
 function fragment7() {
+
 }
 
 function fragment8() {
+
 }
 
 function fragment9() {
+
 }
 
 function resestAnimation() {
