@@ -57,8 +57,17 @@ function startLoop() {
         fragment9();
         break;
       case 10:
-        resestAnimation();
+        fragment10();
         break;
+      case 11:
+        fragment11();
+        break;
+      case 12:
+        fragment12();
+        break;
+      case 13:
+        resestAnimation();
+        break
       default:
         console.debug("[DEBUG] Restarting fragments");
         fragment = 0;
@@ -112,41 +121,82 @@ function fragment4() {
 }
 
 function fragment5() {
-SATELLITE1.style.visibility = "visible";
-SATELLITE1.style.transition = "transform 8s linear";
-SATELLITE1.style.transform = "translateY(1480px)";
-setTimeout(() => {
-SATELLITE2.style.visibility = "visible";
-SATELLITE2.style.transition = "transform 8s linear";
-SATELLITE2.style.transform = "translateY(1580px)";
-}, 1500);
+  SATELLITE1.style.visibility = "visible";
+  SATELLITE1.style.transition = "transform 8s linear";
+  SATELLITE1.style.transform = "translateY(1480px)";
+  setTimeout(() => {
+    SATELLITE2.style.visibility = "visible";
+    SATELLITE2.style.transition = "transform 8s linear";
+    SATELLITE2.style.transform = "translateY(1580px)";
+  }, 1500);
 }
 
 function fragment6() {
   setTimeout(() => {
-  METEOR.style.visibility = "visible";
-  METEOR.style.transition = "transform 4s linear";
-  METEOR.style.transform = "translateY(1580px) translateX(1000px)";
-}, 2000)
+    METEOR.style.visibility = "visible";
+    METEOR.style.transition = "transform 4s linear";
+    METEOR.style.transform = "translateY(1580px) translateX(1000px)";
+  }, 2000)
 }
 
 function fragment7() {
-NOORDERLICHT.style.visibility = "visible";
-NOORDERLICHT.style.transition = "transform 4s linear";
-NOORDERLICHT.style.transform = "translateY(550px)";
-setTimeout(() => {
-MOON.style.visibility = "visible";
-MOON.style.transition = "transform 3s linear";
-MOON.style.transform = "translateY(200px)";
-}, 1000 );
+  NOORDERLICHT.style.visibility = "visible";
+  NOORDERLICHT.style.transition = "transform 4s linear";
+  NOORDERLICHT.style.transform = "translateY(700px)";
+  setTimeout(() => {
+    MOON.style.visibility = "visible";
+    MOON.style.transition = "transform 3s linear";
+    MOON.style.transform = "translateY(200px)";
+  }, 1000);
 }
 
 function fragment8() {
-  RAKETMETVUUR.transition = "transform 4s linear";
-  RAKETMETVUUR.transform = "translateY(-600px)";
+  RAKETMETVUUR.style.transition = "transform 4s linear";
+  RAKETMETVUUR.style.transform = "translateY(-1200px)";
 }
 
 function fragment9() {
+  MOON.style.visibility = "hidden";
+  NOORDERLICHT.style.visibility = "hidden";
+  SPACE.style.visibility = "visible";
+  MOONSURFACE.style.visibility = "visible";
+  MOONSURFACE.style.transition = "transform 4s linear";
+  MOONSURFACE.style.transform = "translateY(-500px)"
+  ACORN.style.visibility = "visible";
+  ACORN.style.transition = "transform 4s linear";
+  ACORN.style.transform = "translateY(-500px)"
+  RAKETMETVUUR.style.transition = "transform 6s ease-out";
+  RAKETMETVUUR.style.transform = "translateY(0px)";
+}
+
+function fragment10() {
+  setTimeout(() => {
+    RAKETMETVUUR.style.visibility = "hidden";
+    RAKETZONDERVUUR.style.visibility = "visible";
+  }, 2000);
+}
+
+function fragment11() {
+  RAKETZONDERVUUR.style.visibility = "hidden";
+  setTimeout(() => {
+  LEGERAKET.style.visibility = "visible";
+  }, 500);
+  setTimeout(() => {
+    // EEKHOORN.style.webkitTransform = "scaleX(-1)";
+    // EEKHOORN.style.transform = "scaleX(-1)";
+
+    // EEKHOORN.style = "transform: scaleX(-1)";
+    // EEKHOORN.style = "-webkit-transform: scaleX(-1);"
+
+    // EEKHOORN.style.transform = "rotateY(180deg)";
+    
+    EEKHOORN.style.visibility = "visible";
+    EEKHOORN.style.transition = "transform 4s linear";
+    EEKHOORN.style.transform = "translateX(250px)";
+  }, 1000);
+}
+
+function fragment12() {
 
 }
 

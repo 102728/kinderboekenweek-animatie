@@ -32,22 +32,22 @@ html {
     position: absolute;
     width: 1920px;
     height: 1080px;
-    top: -1080px;
+    top: 0px;
 }
 
 #noorderlicht {
     visibility: hidden;
     position: absolute;
     width: 1500px;
-    top: -550px;
+    top: -700px;
     left: 150px;
 }
 
 #moonsurface {
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
     width: 1920px;
-    top: 600px;
+    top: 1100px;
 }
 
 /* main character */
@@ -154,6 +154,6 @@ html {
     visibility: hidden;
     position: absolute;
     width: 100px;
-    top: 875px;
+    top: 1375px;
     left: 550px;
 }
