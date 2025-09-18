@@ -189,7 +189,7 @@ function fragment11() {
     // EEKHOORN.style = "-webkit-transform: scaleX(-1);"
 
     // EEKHOORN.style.transform = "rotateY(180deg)";
-    
+
     EEKHOORN.style.visibility = "visible";
     EEKHOORN.style.transition = "transform 4s linear";
     EEKHOORN.style.transform = "translateX(250px)";
@@ -197,29 +197,51 @@ function fragment11() {
 }
 
 function fragment12() {
-
+// leeg om pauze bij einde te creeren
 }
 
 function resestAnimation() {
+  BODY.style.backgroundColor = "skyblue";
   GRASS.style.visibility = "visible";
+  GRASS.style.transform = "translateY(0px);";
   SPACE.style.visibility = "hidden";
   NOORDERLICHT.style.visibility = "hidden";
+  NOORDERLICHT.style.transform = "translateY(0px)";
   MOONSURFACE.style.visibility = "hidden";
-  EEKHOORN.style.visibility = "visible";
-  LEGERAKET.style.visibility = "visible";
+  MOONSURFACE.style.transform = "translateY(0px)";
+  // EEKHOORN.style.visibility = "visible";
+  //draai eekhoorn + eventueel correcte hoogte
+  EEKHOORN.style.transform = "translateX(0px)";
+  // LEGERAKET.style.visibility = "visible";
   RAKETMETVUUR.style.visibility = "hidden";
   RAKETZONDERVUUR.style.visibility = "hidden";
   ACORN.style.visibility = "hidden";
-  ZON.style.visibility = "hidden";
-  CLOUD.style.visibility = "hidden";
+  ZON.style.visibility = "visible";
+  ZON.style.transform = "translateY(0px)";
+  CLOUD1.style.visibility = "hidden";
+  CLOUD1.style.transform = "translateY(0px)";
+  CLOUD2.style.visibility = "hidden";
+  CLOUD2.style.transform = "translateY(0px)";
+  CLOUD3.style.visibility = "hidden";
+  CLOUD3.style.transform = "translateY(0px)";
   PLANE.style.visibility = "hidden";
+  PLANE.style.transform = "translateX(0px) translateY(0px)";
   SATELLITE1.style.visibility = "hidden";
+  SATELLITE1.style.transform = "translateY(0px)";
   SATELLITE2.style.visibility = "hidden";
+  SATELLITE2.style.transform = "translateY(0px)";
   MOON.style.visibility = "hidden";
+  MOON.style.transform = "translateY(0px)";
   METEOR.style.visibility = "hidden";
-  EEKHOORN.style.transform = "translateX(0px)";
+  METEOR.style.transform = "translateY(0px) translateX(0px)";
 }
 
 window.addEventListener("DOMContentLoaded", () => {
   startLoop();
 });
+
+// fix at reset:
+// sun
+// background
+// squirrel
+// grass
