@@ -179,20 +179,15 @@ function fragment10() {
 function fragment11() {
   RAKETZONDERVUUR.style.visibility = "hidden";
   setTimeout(() => {
-  LEGERAKET.style.visibility = "visible";
+    LEGERAKET.style.visibility = "visible";
   }, 500);
   setTimeout(() => {
-    // EEKHOORN.style.webkitTransform = "scaleX(-1)";
-    // EEKHOORN.style.transform = "scaleX(-1)";
-
-    // EEKHOORN.style = "transform: scaleX(-1)";
-    // EEKHOORN.style = "-webkit-transform: scaleX(-1);"
-
-    // EEKHOORN.style.transform = "rotateY(180deg)";
-    
     EEKHOORN.style.visibility = "visible";
+    EEKHOORN.style.transition = "none";
+    EEKHOORN.style.transform = "scaleX(-1) translateX(-800px)";
+    void EEKHOORN.offsetWidth;
     EEKHOORN.style.transition = "transform 4s linear";
-    EEKHOORN.style.transform = "translateX(250px)";
+    EEKHOORN.style.transform = "scaleX(-1) translateX(-250px)";
   }, 1000);
 }
 
