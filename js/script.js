@@ -196,39 +196,77 @@ function fragment12() {
 }
 
 function resestAnimation() {
+  // Reset background / container
+  BODY.style.transition = "none"; // prevent fade anim during reset
   BODY.style.backgroundColor = "skyblue";
+
+  // Helper to clear transform & transition quickly
+  function clear(el) {
+    if (!el) return;
+    el.style.transition = "none"; // remove lingering transitions
+    el.style.transform = ""; // empty string restores CSS default (no transform)
+  }
+
+  // Show starting elements
   GRASS.style.visibility = "visible";
-  GRASS.style.transform = "translateY(0px);";
+  ZON.style.visibility = "visible";
+  EEKHOORN.style.visibility = "visible";
+  LEGERAKET.style.visibility = "visible";
+
+  // Hide elements that should start hidden
   SPACE.style.visibility = "hidden";
   NOORDERLICHT.style.visibility = "hidden";
-  NOORDERLICHT.style.transform = "translateY(0px)";
   MOONSURFACE.style.visibility = "hidden";
-  MOONSURFACE.style.transform = "translateY(0px)";
-  // EEKHOORN.style.visibility = "visible";
-  //draai eekhoorn + eventueel correcte hoogte
-  EEKHOORN.style.transform = "translateX(0px)";
-  // LEGERAKET.style.visibility = "visible";
   RAKETMETVUUR.style.visibility = "hidden";
   RAKETZONDERVUUR.style.visibility = "hidden";
   ACORN.style.visibility = "hidden";
-  ZON.style.visibility = "visible";
-  ZON.style.transform = "translateY(0px)";
   CLOUD1.style.visibility = "hidden";
-  CLOUD1.style.transform = "translateY(0px)";
   CLOUD2.style.visibility = "hidden";
-  CLOUD2.style.transform = "translateY(0px)";
   CLOUD3.style.visibility = "hidden";
-  CLOUD3.style.transform = "translateY(0px)";
   PLANE.style.visibility = "hidden";
-  PLANE.style.transform = "translateX(0px) translateY(0px)";
   SATELLITE1.style.visibility = "hidden";
-  SATELLITE1.style.transform = "translateY(0px)";
   SATELLITE2.style.visibility = "hidden";
-  SATELLITE2.style.transform = "translateY(0px)";
   MOON.style.visibility = "hidden";
-  MOON.style.transform = "translateY(0px)";
   METEOR.style.visibility = "hidden";
-  METEOR.style.transform = "translateY(0px) translateX(0px)";
+
+  // Clear transforms & transitions (sets back to initial CSS placement)
+  clear(GRASS); // fixes stray semicolon & position
+  clear(ZON);
+  clear(EEKHOORN);
+  clear(LEGERAKET);
+  clear(RAKETMETVUUR);
+  clear(RAKETZONDERVUUR);
+  clear(ACORN);
+  clear(SPACE);
+  clear(NOORDERLICHT);
+  clear(MOONSURFACE);
+  clear(CLOUD1);
+  clear(CLOUD2);
+  clear(CLOUD3);
+  clear(PLANE);
+  clear(SATELLITE1);
+  clear(SATELLITE2);
+  clear(MOON);
+  clear(METEOR);
+
+  // Specific positions that were transformed during the sequence
+  // Squirrel was flipped (scaleX(-1)); ensure it faces original direction
+  EEKHOORN.style.transform = ""; // remove flip & translation
+
+  // Rocket states: ensure base rocket visible, others hidden & neutral
+  LEGERAKET.style.transform = "";
+  RAKETMETVUUR.style.transform = "";
+  RAKETZONDERVUUR.style.transform = "";
+
+  // Parallax items
+  ACORN.style.transform = ""; // ensure it falls again next loop
+
+  // Northern lights & moon surface revert
+  NOORDERLICHT.style.transform = "";
+  MOONSURFACE.style.transform = "";
+
+  // Force reflow so next fragment transitions trigger cleanly
+  void BODY.offsetWidth;
 }
 
 window.addEventListener("DOMContentLoaded", () => {
