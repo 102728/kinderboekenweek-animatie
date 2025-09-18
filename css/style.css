@@ -36,10 +36,11 @@ html {
 }
 
 #noorderlicht {
-    /* visibility: hidden; */
+    visibility: hidden;
     position: absolute;
-    width: 1000px;
+    width: 1500px;
     top: -550px;
+    left: 150px;
 }
 
 #moonsurface {
@@ -138,6 +139,7 @@ html {
     visibility: hidden;
     position: absolute;
     width: 200px;
+    top: -200px;
 }
 
 #meteor {

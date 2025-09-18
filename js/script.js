@@ -90,8 +90,8 @@ function fragment3() {
   GRASS.style.transform = "translateY(600px)";
   ZON.style.transition = "transform 12s linear";
   ZON.style.transform = "translateY(1080px)";
-  BODY.style.transition = "backgroundColor 20s linear";
-  BODY.style.backgroundColor.transform = "rgba(5, 46, 87, 1)"
+  BODY.style.transition = "background-color 20s linear";
+  BODY.style.backgroundColor = "rgba(5, 46, 87, 1)"
   setTimeout(() => {
     CLOUD1.style.visibility = "visible";
     CLOUD1.style.transition = "transform 10s linear";
@@ -127,24 +127,23 @@ function fragment6() {
   METEOR.style.visibility = "visible";
   METEOR.style.transition = "transform 4s linear";
   METEOR.style.transform = "translateY(1580px) translateX(1000px)";
-}, 1000)
-  setTimeout(() => {
-  SPACE.style.visibility = "visible";
-  SPACE.style.transition = "transform 6s linear";
-  SPACE.style.transform = "translateY(1080px)";
-  }, 2000);
-}
-
-function fragment7() {
-  setTimeout (() => {
-NOORDERLICHT.style.visibility = "visible";
-NOORDERLICHT.style.transition = "transform 6s linear";
-NOORDERLICHT.style.transform = "translateY(550px)";
 }, 2000)
 }
 
-function fragment8() {
+function fragment7() {
+NOORDERLICHT.style.visibility = "visible";
+NOORDERLICHT.style.transition = "transform 4s linear";
+NOORDERLICHT.style.transform = "translateY(550px)";
+setTimeout(() => {
+MOON.style.visibility = "visible";
+MOON.style.transition = "transform 3s linear";
+MOON.style.transform = "translateY(200px)";
+}, 1000 );
+}
 
+function fragment8() {
+  RAKETMETVUUR.transition = "transform 4s linear";
+  RAKETMETVUUR.transform = "translateY(-600px)";
 }
 
 function fragment9() {
