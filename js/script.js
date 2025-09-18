@@ -20,6 +20,8 @@ const SATELLITE1 = document.getElementById("satellite1");
 const SATELLITE2 = document.getElementById("satellite2");
 const MOON = document.getElementById("moon");
 const METEOR = document.getElementById("meteor");
+// Overig
+const BODY = document.getElementById("bodydiv");
 
 function startLoop() {
   let fragment = 0;
@@ -88,6 +90,8 @@ function fragment3() {
   GRASS.style.transform = "translateY(600px)";
   ZON.style.transition = "transform 12s linear";
   ZON.style.transform = "translateY(1080px)";
+  BODY.style.transition = "backgroundColor 20s linear";
+  BODY.style.backgroundColor.transform = "rgba(5, 46, 87, 1)"
   setTimeout(() => {
     CLOUD1.style.visibility = "visible";
     CLOUD1.style.transition = "transform 10s linear";
@@ -119,9 +123,11 @@ SATELLITE2.style.transform = "translateY(1580px)";
 }
 
 function fragment6() {
+  setTimeout(() => {
   METEOR.style.visibility = "visible";
   METEOR.style.transition = "transform 4s linear";
   METEOR.style.transform = "translateY(1580px) translateX(1000px)";
+}, 1000)
   setTimeout(() => {
   SPACE.style.visibility = "visible";
   SPACE.style.transition = "transform 6s linear";
@@ -130,7 +136,11 @@ function fragment6() {
 }
 
 function fragment7() {
-
+  setTimeout (() => {
+NOORDERLICHT.style.visibility = "visible";
+NOORDERLICHT.style.transition = "transform 6s linear";
+NOORDERLICHT.style.transform = "translateY(550px)";
+}, 2000)
 }
 
 function fragment8() {

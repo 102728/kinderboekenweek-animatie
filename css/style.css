@@ -36,9 +36,10 @@ html {
 }
 
 #noorderlicht {
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
     width: 1000px;
+    top: -550px;
 }
 
 #moonsurface {
